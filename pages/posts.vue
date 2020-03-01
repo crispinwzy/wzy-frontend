@@ -23,7 +23,7 @@
 import SectionHeader from '@/components/SectionHeader.vue'
 import PostCard from '@/components/PostCard.vue'
 import Brand from '@/components/Brand.vue'
-import Posts from '@/API/posts'
+import Posts from '@/api/posts'
 
 export default {
   layout: 'blog',

@@ -84,7 +84,6 @@ export default {
   proxy: {
     '/api/': {
       target: process.env.API_URL,
-      // target: 'http://api.wuzheyun.cn/v1',
       pathRewrite: {
         '^/api/': '/'
       }

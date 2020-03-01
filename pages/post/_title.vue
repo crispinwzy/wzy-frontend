@@ -43,7 +43,7 @@
 <script>
 import SectionHeader from '@/components/SectionHeader.vue'
 import Brand from '@/components/Brand.vue'
-import Posts from '@/API/posts'
+import Posts from '@/api/posts'
 
 export default {
   layout: 'blog',
