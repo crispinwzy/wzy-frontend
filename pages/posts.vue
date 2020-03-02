@@ -3,14 +3,14 @@
     <Brand />
     <b-row>
       <b-col class="main mb-5" cols="12" md="8">
-        <SectionHeader type="start" title="ALL POSTS" class="mb-5" />
+        <SectionHeader type="start" :title="$t('all posts')" class="mb-5" />
         <div class="main-body">
           <PostCard v-for="post in postsList" :key="post.id" :post="post" />
         </div>
       </b-col>
 
       <b-col class="aside mb-5" cols="12" md="4">
-        <SectionHeader type="center" title="CATEGORIES" />
+        <SectionHeader type="center" :title="$t('categories')" />
         <div class="aside-body">
           TO BE UPDATED...
         </div>
