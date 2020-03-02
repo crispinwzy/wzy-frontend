@@ -50,7 +50,9 @@
               class="text-right"
               style="font-weight: 800; letter-spacing: 4px;"
             >
-              <router-link to="/posts">{{ $t('more') }} >>></router-link>
+              <nuxt-link :to="localePath('/posts')">
+                {{ $t('more') }} >>>
+              </nuxt-link>
             </h6>
             <!-- if loading || error -->
             <div>
@@ -98,7 +100,9 @@
                 class="text-right py-3"
                 style="font-weight: 800; letter-spacing: 4px;"
               >
-                <router-link to="/about">{{ $t('more') }} >>></router-link>
+                <nuxt-link :to="localePath('/about')">
+                  {{ $t('more') }} >>>
+                </nuxt-link>
               </h6>
             </section>
           </div>
