@@ -29,7 +29,7 @@
         <section class="contact">
           <div>
             <img src="@/assets/icons/earth-globe.svg" />
-            <span>www.wuzheyun.cn</span>
+            <span>wuzheyun.cn</span>
           </div>
           <div>
             <img src="@/assets/icons/gmail.svg" />
@@ -71,7 +71,7 @@
           </div>
         </section>
         <!-- others -->
-        <section class="py-3 px-2">
+        <section class="py-3 px-2 mb-3">
           <div class="title">{{ $t('resume.languages') }}</div>
           <div class="content">
             <p v-html="$t('resume.languages-contents')"></p>
@@ -109,7 +109,7 @@
           </div>
         </section>
         <!-- 实习 -->
-        <section class="py-3 px-2">
+        <section class="py-3 px-2 mb-3">
           <div class="title">{{ $t('resume.internship') }}</div>
           <div class="content">
             <!-- 实习1 -->
