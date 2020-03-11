@@ -9,11 +9,12 @@ export default (context) => {
       categories: 'CATEGORIES',
       more: 'MORE',
       bio:
-        "Hi, this site is built with Nuxt + Flask for interest.<br>It's still being developed, so that some contents are for test now.",
+        "Hi, this site was built with Nuxt + Flask for interest.<br>It's still being developed, so that some contents are for test now.",
       resume: {
         name: 'ZHEYUN WU',
         title: 'WEB / BACK-END / CRAWLER DEV.',
-        location: 'Shanghai, China',
+        email: 'wuzheyun@gmail.com',
+        location: 'Quanzhou / Shanghai, China',
         profile: 'PROFILE',
         'profile-content':
           "Hi! I'm enthusiastic about IT, currently work mainly in web/backend development. I am familiar with Git and Agile that helps me get into teamwork quickly. Planning to attend master school in 2020, interested in the field of network & communication and SDN/NFV.",
@@ -40,6 +41,10 @@ export default (context) => {
         'education-courses':
           '<b>Core Courses: </b>Calculus, Statistic, C Lang, Programming and Data Structures, Algorithms, Network and Communication, Database Design, Advanced OOP (design patterns), Asp.net Web Programming, Operation Systems, System Analysis and Design, Network Security, Cryptology',
 
+        'education3-heading':
+          'Got offer of Erasmus Mundus Joint Master Degree (EMJMD) | 2020 Fall',
+        'education3-degree': 'Security and Cloud Computing (SECCLO)',
+
         internship: 'INTERNSHIP EXPERIENCE',
         'internship1-heading':
           'Chunghwa Telecom Laboratories | Taiwan | Sep 2018 - Jan 2019',
@@ -50,10 +55,10 @@ export default (context) => {
 
         project: 'PROJECT EXPERIENCE',
         'project1-heading':
-          'Bioinformation System of Taiwan OurGene Biotech Inc. | Jan 2020 - Now',
-        'project1-position': 'Back-end',
+          'Bioinformation System (Taiwan OurGene Biotech Inc.) | Jan 2020 - Now',
+        'project1-position': 'Front-end & Back-end',
         'project1-detail':
-          'Responsibilities: <ul><li>Backend development (Flask/Postgres)</li><li>Automated generating of reports (Reportlab)</li><li>Storage management of reports (Minio)</ul>',
+          'Responsibilities: <ul><li>Frontend development (Vue)</li><li>Backend development (Flask/Postgres)</li><li>Automated generating of reports (Reportlab)</li><li>Storage management of reports (Minio)</ul>',
 
         'project2-heading':
           'E-Commerce Website www.huilipin.cn | Apr 2019 - May 2019',

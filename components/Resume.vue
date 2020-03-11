@@ -33,7 +33,7 @@
           </div>
           <div>
             <img src="@/assets/icons/gmail.svg" />
-            <span>wuzheyun@126.com</span>
+            <span>{{ $t('resume.email') }}</span>
           </div>
           <div>
             <img src="@/assets/icons/smartphone.svg" />
@@ -41,7 +41,7 @@
           </div>
           <div>
             <img src="@/assets/icons/placeholder.svg" />
-            <span>Quanzhou / Shanghai, China</span>
+            <span>{{ $t('resume.location') }}</span>
           </div>
         </section>
       </b-col>
@@ -91,6 +91,16 @@
         <section class="py-3 px-2 mb-3">
           <div class="title">{{ $t('resume.education') }}</div>
           <div class="content">
+            <!-- 教育3 -->
+            <h6 class="heading" v-html="$t('resume.education3-heading')"></h6>
+            <p class="degree">
+              <i v-html="$t('resume.education3-degree')"></i>
+            </p>
+            <!-- 教育2 -->
+            <h6 class="heading" v-html="$t('resume.education2-heading')"></h6>
+            <p class="degree">
+              <i v-html="$t('resume.education2-degree')"></i>
+            </p>
             <!-- 教育1 -->
             <h6 class="heading" v-html="$t('resume.education1-heading')"></h6>
             <p class="degree">
@@ -98,11 +108,6 @@
             </p>
             <p class="detail" v-html="$t('resume.education1-detail')">
               detail here
-            </p>
-            <!-- 教育2 -->
-            <h6 class="heading" v-html="$t('resume.education2-heading')"></h6>
-            <p class="degree">
-              <i v-html="$t('resume.education2-degree')"></i>
             </p>
             <!-- courses -->
             <p class="courses" v-html="$t('resume.education-courses')"></p>

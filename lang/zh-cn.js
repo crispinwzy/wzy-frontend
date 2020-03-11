@@ -13,7 +13,8 @@ export default (context) => {
       resume: {
         name: '吴哲耘',
         title: 'WEB / 后端 / 爬虫 开发',
-        location: '上海',
+        email: 'wuzheyun@126.com',
+        location: '泉州 / 上海',
         profile: '介绍',
         'profile-content':
           '嗨！我来自福建泉州，非常热爱IT，目前主要研究WEB和后端开发。熟悉git、敏捷开发等团队协作模式。有点强迫症。计划2020年9月读研，感兴趣网络通讯、SDN/NFV方向。',
@@ -37,6 +38,10 @@ export default (context) => {
         'education-courses':
           '<b>主要课程: </b>微积分, 统计学, C, 程式设计与数据结构, 算法, 网络与通讯, 数据库设计, 进阶OOP(设计模式), Asp.net网页设计, 操作系统, 系统分析与设计, 网络安全, 密码学',
 
+        'education3-heading':
+          '已获欧盟Erasmus Mundus联合硕士计划 offer | 2020 秋',
+        'education3-degree': '信息安全与云计算 (SECCLO)',
+
         internship: '实习经历',
         'internship1-heading': '中华电信研究院 | 台湾 | 2018.09 - 2019.01',
         'internship1-position': 'KYCheck CRRM系统 数据科学部',
@@ -45,10 +50,10 @@ export default (context) => {
 
         project: '项目经历',
         'project1-heading':
-          '台湾奥基生技有限公司 生物信息系统 | 2020.01 - 现今',
-        'project1-position': '后端',
+          '生物信息系统（台湾奥基生技有限公司）| 2020.01 - 现今',
+        'project1-position': '前端 & 后端',
         'project1-detail':
-          '负责工作: <ul><li>服务端开发(Flask/Postgres)</li><li>报表自动化生产(Reportlab)</li><li>报表存储管理(Minio)</li></ul>',
+          '负责工作: <ul><li>前端开发(Vue)</li><li>服务端开发(Flask/Postgres)</li><li>报表自动化生产(Reportlab)</li><li>报表存储管理(Minio)</li></ul>',
 
         'project2-heading': '惠礼品电商网 www.huilipin.cn | 2019.04 - 2019.05',
         'project2-position': '前端',
