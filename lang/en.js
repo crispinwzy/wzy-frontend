@@ -12,12 +12,12 @@ export default (context) => {
         "Hi, this site was built with Nuxt + Flask for interest.<br>It's still being developed, so that some contents are for test now.",
       resume: {
         name: 'ZHEYUN WU',
-        title: 'WEB / BACK-END / CRAWLER DEV.',
+        title: 'WEB FRONT-END / BACK-END DEV.',
         email: 'wuzheyun@gmail.com',
         location: 'Quanzhou / Shanghai, China',
         profile: 'PROFILE',
         'profile-content':
-          "Hi! I'm enthusiastic about IT, currently work mainly in web/backend development. I am familiar with Git and Agile that helps me get into teamwork quickly. Planning to attend master school in 2020, interested in the field of network & communication and SDN/NFV.",
+          "Hi! I'm enthusiastic about ICT, currently work mainly in web frontend/backend development. I am familiar with Git and Agile that helps me get into teamwork quickly. Planning to attend master school in 2020.",
 
         skills: 'SKILLS',
 
@@ -41,9 +41,38 @@ export default (context) => {
         'education-courses':
           '<b>Core Courses: </b>Calculus, Statistic, C Lang, Programming and Data Structures, Algorithms, Network and Communication, Database Design, Advanced OOP (design patterns), Asp.net Web Programming, Operation Systems, System Analysis and Design, Network Security, Cryptology',
 
-        'education3-heading':
-          'Got offer of Erasmus Mundus Joint Master Degree (EMJMD) | 2020 Fall',
-        'education3-degree': 'Security and Cloud Computing (SECCLO)',
+        'education3-heading': 'Aalto University (EIT Digital) | 2020 Fall',
+        'education3-degree': 'Cloud and Network Infrastructure',
+
+        'education4-heading':
+          'KTH Royal Institute of Technology (EIT Digital) | 2021 Fall',
+        'education4-degree': 'Networked Intelligence',
+
+        edu: {
+          title: 'EDUCATION EXPERIENCE',
+          items: [
+            {
+              heading:
+                '(Expected) EIT Digital Master School | Starting 2020 Aug',
+              degree: 'Cloud and Network Infrastructures',
+              detail:
+                'Entry School: Aalto University, Finland<br/>Exit School: KTH Royal Institute of Technology, Sweden<br/>Exit School Specialisation: Networked Intelligence'
+            },
+            {
+              heading: 'Stockholm University | Sweden | Jan 2019 - Jun 2019',
+              degree:
+                '(Exchange Student) DSV, Department of Computer and Systems Sciences'
+            },
+            {
+              heading: 'Tamkang University | Taiwan | 2015 - 2019',
+              degree: '(Bachelor) Information Management',
+              detail:
+                'GPA: 3.959/4.0, Dept Ranking: 1/206<br>Excellent Graduation System Design (2018)<br>Excellent Academic Performance & Scholarship, TKU (Twice)<br>Excellent Academic Performance, College (Four Times)<br>Ching-sheng Scholarship (Twice)'
+            }
+          ],
+          courses:
+            '<b>Core Courses: </b>Calculus, Statistic, C Lang, Programming and Data Structures, Algorithms, Network and Communication, Database Design, Advanced OOP (design patterns), Asp.net Web Programming, Operation Systems, System Analysis and Design, Network Security, Cryptology'
+        },
 
         internship: 'INTERNSHIP EXPERIENCE',
         'internship1-heading':

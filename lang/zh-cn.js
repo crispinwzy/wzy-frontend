@@ -12,12 +12,12 @@ export default (context) => {
         '嗨，这个网站由Nuxt+Flask搭建，纯属兴趣<br>还未完成，利用空余时间来完善，所以有些内容还是测试用的。',
       resume: {
         name: '吴哲耘',
-        title: 'WEB / 后端 / 爬虫 开发',
+        title: 'WEB前端 / 后端 开发',
         email: 'wuzheyun@126.com',
         location: '泉州 / 上海',
         profile: '介绍',
         'profile-content':
-          '嗨！我来自福建泉州，非常热爱IT，目前主要研究WEB和后端开发。熟悉git、敏捷开发等团队协作模式。有点强迫症。计划2020年9月读研，感兴趣网络通讯、SDN/NFV方向。',
+          '嗨！我来自福建泉州，热爱ICT行业，目前主要从事WEB前端和后端开发。熟悉git、敏捷开发等团队协作模式。有点强迫症。计划2020年读研',
 
         skills: '技能',
 
@@ -32,7 +32,7 @@ export default (context) => {
         'education1-heading': '淡江大学 | 台湾 | 2015 - 2019',
         'education1-degree': '本科 - 信息管理',
         'education1-detail':
-          'GPA: 3.959/4.0, 系组排名: 1/206<br>毕业设计佳作（2018）<br>校级学业优异奖学金（2016-2017）<br>院级学业优异奖（2015-2017）<br>惊声奖学金（2017-2018）',
+          'GPA: 3.959/4.0, 系组排名: 1/206<br>毕业设计佳作（2018）<br>校级学业优异奖学金（2016-2017）<br>院级学业优异奖（2015-2017）<br>惊声奖学金（2017-2018）。',
         'education2-heading': '斯德哥尔摩大学 | 瑞典 | 2019.01 - 2019.06',
         'education2-degree': '交换生 - 计算机与系统科学系(DSV)',
         'education-courses':
@@ -41,6 +41,31 @@ export default (context) => {
         'education3-heading':
           '已获欧盟Erasmus Mundus联合硕士计划 offer | 2020 秋',
         'education3-degree': '信息安全与云计算 (SECCLO)',
+
+        edu: {
+          title: '教育经历',
+          items: [
+            {
+              heading:
+                '（预期）欧洲创新与技术研究院(EIT)硕士项目 | 2020.08 开始',
+              degree: '硕士 - 云计算与网络基础设施',
+              detail:
+                '入口校：芬兰阿尔托大学<br/>出口校：瑞典皇家理工学院<br/>出口校专业：网络智能'
+            },
+            {
+              heading: '斯德哥尔摩大学 | 瑞典 | 2019.01 - 2019.06',
+              degree: '交换生 - 计算机与系统科学系(DSV)'
+            },
+            {
+              heading: '淡江大学 | 台湾 | 2015 - 2019',
+              degree: '本科 - 信息管理',
+              detail:
+                'GPA: 3.959/4.0, 系组排名: 1/206<br>毕业设计佳作（2018）<br>校级学业优异奖学金（2016-2017）<br>院级学业优异奖（2015-2017）<br>惊声奖学金（2017-2018）'
+            }
+          ],
+          courses:
+            '<b>主要课程: </b>微积分, 统计学, C, 程式设计与数据结构, 算法, 网络与通讯, 数据库设计, 进阶OOP(设计模式), Asp.net网页设计, 操作系统, 系统分析与设计, 网络安全, 密码学'
+        },
 
         internship: '实习经历',
         'internship1-heading': '中华电信研究院 | 台湾 | 2018.09 - 2019.01',

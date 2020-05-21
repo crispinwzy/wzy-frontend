@@ -89,28 +89,37 @@
       <b-col cols="12" sm="8" class="right-col d-flex flex-column px-4 py-2">
         <!-- 教育 -->
         <section class="py-3 px-2 mb-3">
-          <div class="title">{{ $t('resume.education') }}</div>
+          <div class="title">{{ $t('resume.edu.title') }}</div>
           <div class="content">
+            <div v-for="item in $t('resume.edu.items')" :key="item.index">
+              <h6 class="heading" v-html="item.heading"></h6>
+              <p class="degree">
+                <i v-html="item.degree"></i>
+              </p>
+              <p class="detail" v-html="item.detail">
+                detail here
+              </p>
+            </div>
             <!-- 教育3 -->
-            <h6 class="heading" v-html="$t('resume.education3-heading')"></h6>
+            <!-- <h6 class="heading" v-html="$t('resume.education3-heading')"></h6>
             <p class="degree">
               <i v-html="$t('resume.education3-degree')"></i>
-            </p>
+            </p> -->
             <!-- 教育2 -->
-            <h6 class="heading" v-html="$t('resume.education2-heading')"></h6>
+            <!-- <h6 class="heading" v-html="$t('resume.education2-heading')"></h6>
             <p class="degree">
               <i v-html="$t('resume.education2-degree')"></i>
-            </p>
+            </p> -->
             <!-- 教育1 -->
-            <h6 class="heading" v-html="$t('resume.education1-heading')"></h6>
+            <!-- <h6 class="heading" v-html="$t('resume.education1-heading')"></h6>
             <p class="degree">
               <i v-html="$t('resume.education1-degree')"></i>
             </p>
             <p class="detail" v-html="$t('resume.education1-detail')">
               detail here
-            </p>
+            </p> -->
             <!-- courses -->
-            <p class="courses" v-html="$t('resume.education-courses')"></p>
+            <p class="courses" v-html="$t('resume.edu.courses')"></p>
           </div>
         </section>
         <!-- 实习 -->
