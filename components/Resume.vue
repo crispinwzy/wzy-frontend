@@ -54,7 +54,7 @@
         <section class="py-3 px-2 mb-3">
           <div class="title">{{ $t('resume.profile') }}</div>
           <div class="content">
-            <p v-html="$t('resume.profile-content')"></p>
+            <p>{{ $t('resume.profile-content') }}</p>
           </div>
         </section>
         <!-- skills -->
@@ -64,24 +64,32 @@
             <p>
               Python / Flask / Scrapy <br />
               JavaScript / Vue / Nuxt <br />
-              HTML / CSS / Bootstrap4 <br />
+              HTML / CSS / Bootstrap4 / ElementUI <br />
               Linux / Docker / SQL <br />
               PHP / Java / C / Excel
             </p>
           </div>
         </section>
-        <!-- others -->
+        <!-- langugaes -->
         <section class="py-3 px-2 mb-3">
           <div class="title">{{ $t('resume.languages') }}</div>
           <div class="content">
-            <p v-html="$t('resume.languages-contents')"></p>
+            <ul class="list-unstyled">
+              <li v-for="item in $t('resume.languages-contents')" :key="item">
+                {{ item }}
+              </li>
+            </ul>
           </div>
         </section>
         <!-- interests -->
         <section class="py-3 px-2">
           <div class="title">{{ $t('resume.interests') }}</div>
           <div class="content">
-            <p v-html="$t('resume.interests-content')"></p>
+            <ul class="list-unstyled">
+              <li v-for="item in $t('resume.interests-content')" :key="item">
+                {{ item }}
+              </li>
+            </ul>
           </div>
         </section>
       </b-col>
@@ -92,80 +100,36 @@
           <div class="title">{{ $t('resume.edu.title') }}</div>
           <div class="content">
             <div v-for="item in $t('resume.edu.items')" :key="item.index">
-              <h6 class="heading" v-html="item.heading"></h6>
+              <h6 class="heading">{{ item.heading }}</h6>
               <p class="degree">
-                <i v-html="item.degree"></i>
+                <i>{{ item.degree }}</i>
               </p>
-              <p class="detail" v-html="item.detail">
-                detail here
-              </p>
+              <ul>
+                <li v-for="v in item.details" :key="v" class="details">
+                  {{ v }}
+                </li>
+              </ul>
             </div>
-            <!-- 教育3 -->
-            <!-- <h6 class="heading" v-html="$t('resume.education3-heading')"></h6>
-            <p class="degree">
-              <i v-html="$t('resume.education3-degree')"></i>
-            </p> -->
-            <!-- 教育2 -->
-            <!-- <h6 class="heading" v-html="$t('resume.education2-heading')"></h6>
-            <p class="degree">
-              <i v-html="$t('resume.education2-degree')"></i>
-            </p> -->
-            <!-- 教育1 -->
-            <!-- <h6 class="heading" v-html="$t('resume.education1-heading')"></h6>
-            <p class="degree">
-              <i v-html="$t('resume.education1-degree')"></i>
-            </p>
-            <p class="detail" v-html="$t('resume.education1-detail')">
-              detail here
-            </p> -->
-            <!-- courses -->
-            <p class="courses" v-html="$t('resume.edu.courses')"></p>
           </div>
         </section>
-        <!-- 实习 -->
-        <section class="py-3 px-2 mb-3">
-          <div class="title">{{ $t('resume.internship') }}</div>
-          <div class="content">
-            <!-- 实习1 -->
-            <h6 class="heading" v-html="$t('resume.internship1-heading')">
-              Chunghwa Telecom Laboratories | Taiwan | Sep 2018 - Jan 2019
-            </h6>
-            <p class="position">
-              <i v-html="$t('resume.internship1-position')"
-                >Department of Data Science</i
-              >
-            </p>
-            <p v-html="$t('resume.internship1-detail')"></p>
-          </div>
-        </section>
-        <!-- 项目 -->
+        <!-- 工作经验 -->
         <section class="py-3 px-2">
-          <div class="title">{{ $t('resume.project') }}</div>
+          <div class="title">{{ $t('resume.work_experience.title') }}</div>
           <div class="content">
-            <!-- 项目1 -->
-            <h6 class="heading" v-html="$t('resume.project1-heading')">...</h6>
-            <p>
-              <i v-html="$t('resume.project1-position')"> ... </i>
-            </p>
-            <p v-html="$t('resume.project1-detail')">
-              Respnsible for: ...
-            </p>
-            <!-- 项目2 -->
-            <h6 class="heading" v-html="$t('resume.project2-heading')">...</h6>
-            <p>
-              <i v-html="$t('resume.project2-position')"> ... </i>
-            </p>
-            <p v-html="$t('resume.project2-detail')">
-              Responsible for: ...
-            </p>
-            <!-- 项目3 -->
-            <h6 class="heading" v-html="$t('resume.project3-heading')">...</h6>
-            <p>
-              <i v-html="$t('resume.project3-position')"> ... </i>
-            </p>
-            <p v-html="$t('resume.project3-detail')">
-              Responsible for: ...
-            </p>
+            <div
+              v-for="item in $t('resume.work_experience.items')"
+              :key="item.index"
+            >
+              <h6 class="heading">{{ item.heading }}</h6>
+              <p class="position">
+                <i>{{ item.position }}</i>
+              </p>
+              <ul>
+                <li v-for="v in item.details" :key="v" class="details">
+                  {{ v }}
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </b-col>
@@ -216,7 +180,7 @@ export default {
     letter-spacing: 4px;
     h1 {
       font-weight: 600;
-      font-size: 60px;
+      font-size: 50px;
       margin-bottom: 20px;
     }
   }
